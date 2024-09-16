@@ -6,7 +6,7 @@ dubbo:
         qos-enable: false
         logger: slf4j
     config-center:
-        address: nacos://150.158.15.11:38848
+        address: nacos://dubbo.nacos:38848
         username: nacos
         password: app@qwe123
         namespace: dev
@@ -19,7 +19,7 @@ dubbo:
             name: dubbo
             port: 38008
     registry:
-        address: nacos://150.158.15.11:38848
+        address: nacos://dubbo.nacos:38848
         username: nacos
         password: app@qwe123
         parameters:
@@ -27,7 +27,7 @@ dubbo:
         group: dubbo
         cluster: default
     metadata-report:
-        address: nacos://150.158.15.11:38848
+        address: nacos://dubbo.nacos:38848
         username: nacos
         password: app@qwe123
         parameters:
